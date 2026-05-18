@@ -499,10 +499,10 @@ export default function App() {
   const animKey    = `${filterTech}|${filterStatut}|${filterExp}`;
 
   const KPI_CARDS = [
-    { icon:"👥", value:stats.total,        label:"Candidats total",       key:"all" },
-    { icon:"✅", value:stats.toRecruit,    label:"À recruter absolument", key:"recruit" },
-    { icon:"📋", value:stats.interview,    label:"En entretien",          key:"interview" },
-    { icon:"❌", value:stats.refused,      label:"Refusés",               key:"refused" },
+    { icon:"", value:stats.total,        label:"Candidats total",       key:"all" },
+    { icon:"", value:stats.toRecruit,    label:"À recruter absolument", key:"recruit" },
+    { icon:"", value:stats.interview,    label:"En entretien",          key:"interview" },
+    { icon:"", value:stats.refused,      label:"Refusés",               key:"refused" },
   ];
 
   return (
@@ -529,7 +529,7 @@ export default function App() {
                 background:'linear-gradient(135deg,rgba(108,99,255,.35),rgba(108,99,255,.12))',
                 border:'1px solid rgba(108,99,255,.45)',
                 display:'flex', alignItems:'center', justifyContent:'center',
-                fontSize:24, userSelect:'none', boxShadow:'0 6px 28px rgba(108,99,255,.28)' }}>⚡</div>
+                fontSize:24, userSelect:'none', boxShadow:'0 6px 28px rgba(108,99,255,.28)' }}></div>
               <div>
                 {/* FIX 1 — lineHeight sur le titre */}
                 <div style={{ color:'#888892', fontSize:11, fontWeight:700, letterSpacing:'0.16em', textTransform:'uppercase', lineHeight:'1.5', marginBottom:4 }}>
@@ -563,7 +563,7 @@ export default function App() {
             ))}
             {/* Avg score — non-clickable */}
             <div className="th-glass" style={{ cursor:'default' }}>
-              <div style={{ fontSize:22, marginBottom:10, lineHeight:1 }}>📊</div>
+              <div style={{ fontSize:22, marginBottom:10, lineHeight:1 }}></div>
               <div className="th-stat-value">{stats.avgScore}%</div>
               <div className="th-stat-label">Score moyen ORAD</div>
             </div>
